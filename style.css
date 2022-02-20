@@ -1,0 +1,342 @@
+@font-face {
+    font-family: 'vallery_qylmor_regularregular';
+    src: url('Font/2/vallery_qylmor-webfont.woff2') format('woff2'),
+         url('Font/allura-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'vallery_qylmor_regularregular';
+    src: url('Font/allura-regular-webfont.woff2') format('woff2'),
+         url('Font/allura-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'alluraregular';
+    src: url('Font/allura-regular-webfont.woff2') format('woff2'),
+         url('Font/allura-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+h1{
+    font-family:'vallery_qylmor_regularregular', Times, serif;
+    font-size: 2.2em;
+    margin: 0;
+}
+
+
+body{
+    margin: 25px 275px;
+    background-color: #FBEAEB;
+    color: #2E3C7E;
+}
+
+nav div img{
+    width: 65px;
+    margin: 0;
+}
+
+nav div p{
+    margin: 0;
+    font-family: 'alluraregular', Times, serif;
+    font-size: 1.6em;
+}
+
+.division{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+
+.decale{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 280px;
+}
+
+nav{
+    list-style-type: none;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.navi{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 600px;
+    height: 60px;
+    border-radius: 5px;
+    border: black 1px solid;
+    padding: 0;
+    margin-bottom: 0;
+    background-color: #2E3C7E;
+}
+
+nav > ul::after{
+    content: "";
+    display: block;
+    clear: both; 
+}
+
+nav > ul > li{ 
+    float: left;
+    position: relative;
+    margin: 0px;
+
+}
+
+nav > ul > li > a{
+    padding: 20px 30px;
+    color: #F7F7F9;
+} 
+
+nav > ul > li:hover a{
+    padding: 15px 30px 20px 30px;
+
+}
+
+nav li{
+    list-style-type: none;
+}
+
+nav ul li ul{
+    width: 100%;
+}
+
+.submenu{
+    display: none ;
+}
+
+nav a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav li:hover .submenu{
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 1000;
+}
+
+.submenu li{
+    border-bottom: 1px solid #CCC;
+}
+
+.submenu li a{
+    padding: 15px 20px;
+    font-size: 13px;
+    color: #222538;
+}
+
+.voyage:hover{
+    border-top: 5px solid #e44d26;
+    background-color: RGBa(228, 77, 38, 0.15);
+}
+.suivre:hover{
+    border-top: 5px solid #0070bb;
+    background-color: RGBa(000, 112, 192, 0.15);
+}
+.site:hover{
+    border-top: 5px solid #f1dc4f;
+    background-color: RGBa(241, 211, 79, 0.15);
+}
+.contact:hover{
+    border-top: 5px solid #BBB;
+    background-color: RGBa(220, 220, 220, 0.15);
+}
+
+.voyage .submenu{
+    background-color: RGB(230, 100, 40);
+}
+.suivre .submenu{
+    background-color: RGB(000, 160, 240);
+}
+.site .submenu{
+    background-color: RGB(250, 215, 100);
+}
+.contact .submenu{
+    background-color: RGB(222, 253, 222);
+}
+
+submenu li:hover a{
+    color: #EEE;
+    font-weight: bold;
+}
+
+.voyage .submenu li:hover{
+    background-color: RGB(210, 77, 60);
+}
+.suivre .submenu li:hover{
+    background-color: RGB(000, 115, 200);
+}
+.site .submenu li:hover{
+    background-color: RGB(200, 165, 75);
+}
+.contact .submenu li:hover{
+    background-color: RGB(232, 200, 202);
+}
+
+header{
+    width: 100%;
+    height: 560px;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: justify;
+    margin-top: 25px;
+    display: flex;
+    align-items: flex-end;
+
+    background-image: url(Images/Paris.jpg); no-repeat;
+    background-size: cover;
+
+    box-shadow: 0 4 4 #1c1a19;
+
+    -webkit-animation-name: diapo;
+    -webkit-animation-duration: 15s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+
+    animation-name: diapo;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@-webkit-keyframes diapo{
+    0%{background-image: url(Images/Paris.jpg)}
+    20%{background-image: url(Images/Berlin.jpg)}
+    40%{background-image: url(Images/new-york.jpg)}
+    60%{background-image: url(Images/Turin.jpg)}
+    80%{background-image: url(Images/Tokyo.jpg)}
+}
+
+.haut{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    background-color: RGBa(24, 24, 24, 0.8);
+    width: 100%;
+}
+.aligne{
+    background-color: #2E3C7E;
+    background: linear-gradient(to top );
+    color: #FBEAEB;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+
+.aligne p{
+    margin-left: 10px;
+}
+.aligne img{
+    margin-left: 6px;
+    margin-right: 10px;
+}
+
+header p{
+    margin-left: 7px;
+    color: white;
+}
+
+main{
+    width: 100%;
+    text-align: justify;
+    margin-right: 30px;
+}
+aside{
+    border: black 1px solid;
+    width: 400px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 25%;
+    text-align: justify;
+    border-radius: 5px;
+    background-color: #2E3C7E;
+    color: #FBEAEB;
+
+}
+
+aside img{
+    width: 139px;
+
+}
+
+aside h2{
+    font-size: 1.3em;
+}
+aside p{
+    margin: 8px 10px ;
+}
+
+.milieu{
+    width: 100%;
+    display: flex;
+}
+
+aside div img{
+    width: 42px;
+    margin: 3px;
+}
+.logo{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #2E3C7E;
+    color: #FBEAEB;
+}
+
+.ami{
+    display: flex;
+    list-style-type: none;    
+}
+
+footer ul{
+    list-style-image: url(Images/ico_liensexterne.png);
+}
+
+.premier{
+    padding: 0;
+}
+
+.dernier{
+    margin-left: 12px;
+}
+.deuxieme{
+    margin-right: 12px;
+}
+
+
